@@ -61,7 +61,7 @@ function showSlides(n) {
 
 // timer
 
-var countDownDate = new Date("2023-10-18 23:34:10").getTime();
+var countDownDate = new Date("2023-10-30 23:34:10").getTime();
 
 var x = setInterval(() => {
     var now = new Date().getTime();
@@ -77,3 +77,53 @@ var x = setInterval(() => {
     document.getElementById("seconds").innerHTML = seconds;
 
 }, 1000);
+
+// search box responsive
+
+const iconResponsive = document.querySelector(".fa-magnifying-glass")
+
+iconResponsive.onclick = function() {
+    searchModal.style.display = "block"
+}
+
+closeSearchBtn.onclick = function() {
+    searchModal.style.display = "none"
+}
+
+// img slide responsive
+
+var slideIndex2 = 1;
+showSlides2(slideIndex2)
+
+function controlSlides2(n) {
+    slideIndex2 += n
+    showSlides2(slideIndex2)
+}
+
+function dotSlide2(n) {
+    slideIndex2 = n;
+    showSlides2(slideIndex2);
+}
+
+function showSlides2(n) {
+    let i;
+    const sliders2 = document.getElementsByClassName("slide_responsive")
+    const dots2 = document.getElementsByClassName("dot_responsive")
+    if (n > sliders2.length) {
+        slideIndex2 = 1
+    }
+    if (n < 1) {
+        slideIndex2 = sliders2.length;
+    }
+
+    for (let i = 0; i < sliders2.length; i++) {
+        sliders2[i].style.display = "none"
+    }
+
+    for (let index = 0; index < dots2.length; index++) {
+        dots2[index].className = dots2[index].className.replace(" active", "");
+    }
+
+    sliders2[slideIndex2 - 1].style.display = "block"
+    dots2[slideIndex2 - 1].className += " active";
+}
