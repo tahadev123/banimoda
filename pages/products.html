@@ -321,21 +321,40 @@
     <div class="Comment_none">
         <div class="comments_container">
             <div class="container">
-                <div class="comment">
-                    <img src="../assets/icons/user.png" class="user_icon">
-                    <p class="Opinion_one">بسیار زیبا</p>
-                    <p class="username">( محمد صادق پور )</p>
-                    <p class="date_comment">١٤٠٢/٧/١٥</p>
-                    <p class="Proposal">خرید این محصول را پیشنهاد میکنم</p>
-                    <p class="Opinion_two">جنس عالی..فقط مناسب تابستان نیست...با تخفیف خیلی خوب خریدم ممنون بانی مد</p>
+                <div class="comments_box">
+                    <div class="comment">
+                        <img src="../assets/icons/user.png" class="user_icon">
+                        <p class="Opinion_one">بسیار زیبا</p>
+                        <p class="username">( محمد صادق پور )</p>
+                        <p class="date_comment">١٤٠٢/٧/١٥</p>
+                        <p class="Proposal">خرید این محصول را پیشنهاد میکنم</p>
+                        <p class="Opinion_two">جنس عالی..فقط مناسب تابستان نیست...با تخفیف خیلی خوب خریدم ممنون بانی مد</p>
+                    </div>
+                    <div class="comment">
+                        <img src="../assets/icons/user.png" class="user_icon">
+                        <p class="Opinion_one">بسیار زیبا</p>
+                        <p class="username">( محمد صادق پور )</p>
+                        <p class="date_comment">١٤٠٢/٧/١٥</p>
+                        <p class="not_Proposal">خرید این محصول را پیشنهاد نمیکنم</p>
+                        <p class="Opinion_two">جنس عالی..فقط مناسب تابستان نیست...با تخفیف خیلی خوب خریدم ممنون بانی مد</p>
+                    </div>
                 </div>
-                <div class="comment">
-                    <img src="../assets/icons/user.png" class="user_icon">
-                    <p class="Opinion_one">بسیار زیبا</p>
-                    <p class="username">( محمد صادق پور )</p>
-                    <p class="date_comment">١٤٠٢/٧/١٥</p>
-                    <p class="not_Proposal">خرید این محصول را پیشنهاد نمیکنم</p>
-                    <p class="Opinion_two">جنس عالی..فقط مناسب تابستان نیست...با تخفیف خیلی خوب خریدم ممنون بانی مد</p>
+                <div class="add_comment">
+                    <h3>ثبت نظر</h3>
+                    <p class="warning">لطفا قبل از نوشتن نظر خود در مورد این محصول، قوانین و ضوابط را مطالعه کنید.</p>
+                    <input class="Anonymous_btn" type="checkbox">
+                    <span class="Anonymous">ارسال نظر به صورت ناشناس</span>
+                    <form class="comment_contents">
+                        <div class="comment_content">
+                            <input type="text" name="title_comment" placeholder="عنوان نظر">
+                            <input type="text" name="comment" placeholder="نظر خود را بنویسید...">
+                        </div>
+                    </form>
+                    <input class="good_btn" type="checkbox" name="good">
+                    <span class="good_title">خرید این محصول را پیشنهاد می کنم.</span>
+                    <input class="not_good_btn" type="checkbox" name="not_good">
+                    <span class="not_good_title">خرید این محصول را پیشنهاد نمی کنم.</span>
+                    <button>ثبت نظر</button>
                 </div>
             </div>
         </div>
@@ -514,7 +533,7 @@
                         </div>
                     </ul>
                 </main>
-                <img src="../assets/images/banimag.png" alt="">
+                <img class="bani_mag_logo" src="../assets/images/banimag.png" alt="">
                 <div class="logo_namad">
                     <img src="../assets/images/ENAMADpng.parspng.com_.png" alt="">
                     <img src="../assets/images/logo-itehad@2x.png" alt="">
@@ -535,7 +554,7 @@
             <p class="off_price_risponsive">٦٤٩,٠٠٠ تومان</p>
         </div>
     </div>
-
+    
     <script src="../javascript/products.js"></script>
 </body>
 </html>

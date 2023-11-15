@@ -61,7 +61,7 @@ function showSlides(n) {
 
 // timer
 
-var countDownDate = new Date("2023-10-30 23:34:10").getTime();
+var countDownDate = new Date("2023-11-30 23:34:10").getTime();
 
 var x = setInterval(() => {
     var now = new Date().getTime();

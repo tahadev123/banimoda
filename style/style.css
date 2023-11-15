@@ -760,6 +760,9 @@ header input::placeholder {
 .Categories_img {
     padding-top: 30px;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .Categories_img img {
@@ -815,7 +818,9 @@ header input::placeholder {
     color: #fff;
     font-family: 'peyda';
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 21px;
 }
 
@@ -826,7 +831,9 @@ header input::placeholder {
     color: #fff;
     font-family: 'peyda';
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 21px;
 }
 
@@ -837,7 +844,9 @@ header input::placeholder {
     color: #fff;
     font-family: 'peyda';
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 21px;
 }
 
@@ -902,7 +911,7 @@ header input::placeholder {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 56%;
+    bottom: 36%;
     left: 84px;
 }
 
@@ -958,36 +967,45 @@ header input::placeholder {
 }
 
 .M {
-    margin-right: 15px;
-    width: 26px;
-    height: 26px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    text-align: center;
     position: relative;
     bottom: 48px;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .L {
-    margin-right: 15px;
-    width: 26px;
-    height: 26px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    text-align: center;
     position: relative;
     bottom: 48px;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .XL {
-    margin-right: 15px;
-    width: 30px;
-    height: 30px;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    text-align: center;
     position: relative;
     bottom: 48px;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .more {
@@ -1018,6 +1036,12 @@ header input::placeholder {
     width: 100%;
 }
 
+.Categories_img2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .Categories_img2 img {
     width: 24%;
     margin-top: 65px;
@@ -1030,6 +1054,7 @@ header input::placeholder {
 .items {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 70px;
 }
 
@@ -1065,6 +1090,7 @@ header input::placeholder {
     font-family: 'peyda';
     text-align: center;
     font-size: 15px;
+    padding: 0 20px;
 }
 
 /* best brand */
@@ -1084,11 +1110,13 @@ header input::placeholder {
 .brand {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .brand img {
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 /* blog */
@@ -1385,7 +1413,6 @@ footer {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    /* z-index: -1; */
 }
 
 .main i {
@@ -1447,6 +1474,42 @@ footer {
     width: 80px;
 }
 
+/* header responsive */
+
+.header_responsive_none {
+    display: none;
+}
+
+.header_responsive {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 20px #333;
+    flex-direction: row-reverse;
+}
+
+.home_header, .categorie_header, .cart_header, .profile_header {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_header span, .categorie_header span, .cart_header span, .profile_header span {
+    font-size: 17px;
+}
+
+.home_header p, .categorie_header p, .cart_header p, .profile_header p {
+    font-family: 'peyda-Bold';
+}
+
 @media screen and (max-width: 1495px) {
     .product {
         height: 505px;
@@ -1454,6 +1517,12 @@ footer {
 
     .product_img img {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 1495px) {
+    .buy {
+        display: none;
     }
 }
 
@@ -1523,6 +1592,14 @@ footer {
         top: 60%;
         left: 63px;
     }
+
+    .newsletter_form {
+        left: 24%;
+    }
+
+    .header_responsive_none {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 1320px) {
@@ -1549,6 +1626,10 @@ footer {
         top: 60%;
         left: 45px;
     }
+
+    .newsletter_form {
+        left: 21%;
+    }
 }
 
 @media screen and (max-width: 1160px) {
@@ -1560,6 +1641,18 @@ footer {
         width: 28%;
         height: auto;
         margin-left: 30px;
+    }
+
+    .Services {
+        display: none;
+    }
+
+    .logo_footer {
+        display: none;
+    }
+
+    .logo_namad img {
+        width: 55px;
     }
 }
 
@@ -1601,6 +1694,10 @@ footer {
 
     .off_price {
         font-size: 12px;
+    }
+
+    .newsletter_form {
+        left: 13%;
     }
 }
 
@@ -1657,6 +1754,14 @@ footer {
         width: 40px;
         height: 40px;
     }
+
+    .about {
+        display: none;
+    }
+
+    .footer_content {
+        padding-right: 80px;
+    }
 }
 
 @media screen and (max-width: 813px) {
@@ -1666,10 +1771,15 @@ footer {
 
     .timer_img img {
         width: 200px;
+        margin-top: 15px;
     }
 
     .count_timer h3 {
-        font-size: 14px;
+        display: none;
+    }
+
+    .newsletter_form {
+        left: 4%;
     }
 }
 
@@ -1708,6 +1818,64 @@ footer {
 
     .off_price {
         font-size: 14px;
+    }
+
+    .newsletter_form {
+        left: 10%;
+        top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 500px;
+    }
+
+    .newsletter_form input {
+        margin-right: 0;
+    }
+
+    .main a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .newsletter_form {
+        left: 4%;
+    }
+
+    .main {
+        display: none;
+    }
+
+    .footer_part2 button {
+        display: none;
+    }
+
+    .bani_mag_logo {
+        display: none;
+    }
+
+    .Description_footer p {
+        font-size: 13px;
+    }
+
+    .Description_footer h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .newsletter_form {
+        left: -4%;
+    }
+
+    .footer_part2 {
+        display: none;
+    }
+
+    .footer_part1 {
+        width: 100%;
     }
 }
 
@@ -2126,9 +2294,99 @@ footer {
     text-align: right;
 }
 
+.add_comment {
+    height: 150px;
+    width: 200%;
+    margin-top: 100px;
+}
+
+.add_comment h3 {
+    text-align: right;
+    font-family: peyda-Bold;
+}
+
+.warning {
+    text-align: right;
+    font-family: 'peyda';
+}
+
+.Anonymous {
+    float: right;
+    font-family: 'peyda';
+    margin-top: 20px;
+}
+
+.Anonymous_btn {
+    float: right;
+    accent-color: #25D366;
+    width: 15px;
+    height: 15px;
+    margin-top: 23px;
+    margin-left: 15px;
+}
+
+.comment_content {
+    width: 100%;
+    height: 210px;
+}
+
+.comment_contents input {
+    width: 30%;
+    height: 50px;
+    text-align: right;
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: 'peyda';
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    position: relative;
+    left: 70%;
+    top: 50px;
+}
+
+.good_btn {
+    float: right;
+    margin-left: 15px;
+    accent-color: #25D366;
+    width: 15px;
+    height: 15px;
+}
+
+.not_good_btn {
+    float: right;
+    margin-left: 15px;
+    accent-color: #d91414;
+    width: 15px;
+    height: 15px;
+    margin-right: 50px;
+}
+
+.not_good_title, .good_title {
+    float: right;
+    font-family: 'peyda';
+}
+
+.add_comment button {
+    width: 120px;
+    height: 40px;
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    font-family: 'peyda-Bold';
+    font-size: 15px;
+    border-radius: 7px;
+    float: right;
+    margin-right: 50px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
 .related h1 {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 210px;
     padding-bottom: 50px;
     font-family: 'peyda-Bold';
 }
@@ -2204,6 +2462,10 @@ footer {
     .how_size {
         font-size: 15px;
     }
+
+    .comment {
+        width: 113%;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -2267,6 +2529,20 @@ footer {
     .icon_shared span {
         left: 26%;
     }
+
+    .comment {
+        width: 175%;
+    }
+
+    .add_comment {
+        width: 331%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .comment {
+        width: 185%;
+    }
 }
 
 @media screen and (max-width: 915px) {
@@ -2298,12 +2574,81 @@ footer {
         left: 29%;
         width: 25%;
     }
+
+    .comment {
+        width: 400%;
+    }
+
+    .user_icon {
+        width: 30px;
+        height: 30px;
+        left: 28%;
+    }
+
+    .Opinion_one {
+        font-size: 16px;
+        left: 25%;
+    }
+
+    .username {
+        left: 21%;
+    }
+
+    .date_comment {
+        left: 17%;
+    }
+
+    .Proposal {
+        font-size: 14px;
+        left: 15%;
+    }
+
+    .not_Proposal {
+        font-size: 14px;
+        left: 15%;
+    }
+
+    .Opinion_two {
+        font-size: 14px;
+        left: 20%;
+    }
+
+    .add_comment {
+        width: 508%;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .comment {
+        width: 375%;
+    }
+
+    .add_comment {
+        width: 480%;
+    }
+
+    .comment_contents input {
+        width: 45%;
+        left: 55%;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .complite_buy select {
         width: 38%;
         left: 56%;
+    }
+
+    .comment {
+        width: 355%;
+    }
+
+    .information_button button {
+        width: 145px;
+    }
+
+    .add_comment {
+        width: 440%;
     }
 }
 
@@ -2338,6 +2683,52 @@ footer {
     .image_title {
         font-size: 14px;
     }
+
+    .user_icon {
+        width: 30px;
+        height: 30px;
+        left: 15%;
+    }
+
+    .Opinion_one {
+        font-size: 16px;
+        left: 12%;
+    }
+
+    .username {
+        left: 8%;
+    }
+
+    .date_comment {
+        left: 5%;
+    }
+
+    .Proposal {
+        font-size: 14px;
+        left: 0%;
+    }
+
+    .not_Proposal {
+        font-size: 14px;
+        left: 0%;
+    }
+
+    .Opinion_two {
+        font-size: 14px;
+        left: 6%;
+    }
+
+    .add_comment {
+        width: 338%;
+    }
+
+    .add_comment button {
+        margin-top: 30px;
+    }
+
+    .comment {
+        width: 296%;
+    }
 }
 
 @media screen and (max-width: 595px) {
@@ -2358,6 +2749,19 @@ footer {
 
     .current_place {
         height: 50vh;
+    }
+
+    .comment {
+        width: 272%;
+    }
+
+    .add_comment {
+        width: 291%;
+    }
+
+    .not_good_btn {
+        margin-right: 12px;
+        margin-top: 5px;
     }
 }
 
@@ -2600,5 +3004,572 @@ div.panel{
 
     .remaining {
         top: 210px;
+    }
+}
+
+/* cart */
+
+.level {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.level div {
+    display: flex;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.level img {
+    margin-left: 15px;
+}
+
+.Shipping_information, .Payment_Information {
+    filter: invert(50%);
+}
+
+.level p {
+    font-size: 18px;
+    font-family: peyda-Bold;
+}
+
+.level span {
+    margin-top: 15px;
+    font-size: 25px;
+    margin-right: 45px;
+}
+
+.cart_product_header {
+    display: flex;
+    background-color: #fafafa;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+
+.item_name {
+    flex-basis: calc(34% + 187px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-family: 'peyda-Bold';
+    font-size: 17px;
+}
+
+.item_price, .item_quantity {
+    width: 22%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'peyda-Bold';
+    font-size: 17px;
+}
+
+.content_cart {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.item_name_content {
+    flex-basis: calc(34% + 187px);
+}
+
+.img_item_name {
+    position: relative;
+}
+
+.img_item_name img {
+    width: 150px;
+    float: right;
+}
+
+.delete_item {
+    width: 30px;
+    height: 30px;
+    background-color: #666;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    transition: 0.4s ease;
+}
+
+.delete_item:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.delete_item span {
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+    color: #fff;
+}
+
+.name_info {
+    text-align: right;
+    font-size: 19px;
+    font-family: 'peyda-Bold';
+}
+
+.desc_info {
+    text-align: right;
+    font-size: 17px;
+    font-family: 'peyda';
+}
+
+.size_info {
+    display: flex;
+    border-left: 1px solid #ccc;
+    height: 30px;
+    align-items: center;
+    padding: 15px;
+    float: right;
+}
+
+.size_info p {
+    font-family: peyda;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.color_info {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 15px;
+    float: right;
+}
+
+.color_info p {
+    font-family: peyda;
+    margin-right: 10px;
+}
+
+.gift_btn {
+    position: relative;
+    float: right;
+}
+
+.gift_btn button {
+    width: 155px;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'peyda';
+    background-color: #fff;
+    border: 1px solid #25D366;
+    border-radius: 7px;
+}
+
+.gift_input {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    accent-color: #25D366;
+}
+
+.item_price_content {
+    width: 33%;
+}
+
+.price_off_item_price {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 17px;
+    font-family: 'peyda-Bold';
+    color: #666;
+    text-decoration: line-through;
+}
+
+.token_off {
+    float: right;
+    margin-right: 15px;
+    width: 45px;
+    height: 25px;
+    background-color: #F37A23;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'peyda-Bold';
+    margin-top: 20px;
+}
+
+.pr_2 {
+    color: #F37A23;
+    font-family: peyda-Bold;
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.content_cart {
+    margin-top: 50px;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.price_item_price {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: 'peyda-Bold';
+    color: #F37A23;
+}
+
+.item_quantity_content {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_quantity_content button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.item_quantity_content span {
+    font-size: 20px;
+    font-family: 'peyda';
+    padding: 20px;
+}
+
+.item_final_price_content {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_final_price_content p {
+    color: #25D366;
+    font-size: 19px;
+    font-family: peyda-Bold;
+}
+
+/* prices all */
+
+.Checkout {
+    width: 100%;
+    height: 350px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.Checkout1 {
+    width: 70%;
+    height: 350px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.submit_discount {
+    width: 40%;
+    height: 65px;
+    background-color: #fff;
+    border: 1px solid #25D366;
+    border-radius: 7px;
+    font-size: 17px;
+    font-family: 'peyda-Bold';
+    float: right;
+    margin-top: 70px;
+    margin-right: 50px;
+    transition: 0.4s ease;
+}
+
+.submit_discount:hover {
+    color: #25D366;
+}
+
+.Checkout1 p {
+    font-family: 'peyda';
+    padding: 0 50px;
+    margin-top: 40px;
+}
+
+.b1 {
+    margin-left: 5px;
+    color: #25D366;
+    font-family: 'peyda-Bold';
+}
+
+.b2{
+    color: #F37A23;
+    font-family: 'peyda-Bold';
+    margin-left: 5px;
+}
+
+.Checkout2 {
+    width: 30%;
+    height: 350px;
+    float: left;
+}
+
+.prices_all {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    height: 145px;
+}
+
+.prices_all ul {
+    list-style: none;
+}
+
+.prices_all li {
+    padding: 10px;
+    font-family: 'peyda';
+}
+
+.submit_checkout {
+    width: 65%;
+    height: 50px;
+    background-color: #25D366;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    color: #fff;
+    font-family: 'peyda-Bold';
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 30px;
+    transition: 0.4s ease;
+}
+
+.submit_checkout:hover {
+    background-color: #009657;
+}
+
+.flex_responsive {
+    width: 67%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.submit_checkout_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1407px) {
+    .gift_btn button {
+        margin-top: 10px;
+    }
+
+    .gift_input {
+        top: 14px;
+    }
+
+    .price_item_price {
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1302px) {
+    .prices_all {
+        height: auto;
+        border: none;
+    }
+
+    .prices_all li {
+        font-size: 14px !important;
+        padding: 0 50px !important;
+        padding: 10px !important;
+    }
+
+    .Checkout1 p {
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .Checkout {
+        height: 550px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Checkout1 {
+        width: 100%;
+    }
+
+    .Checkout2 {
+        width: 100%;
+        margin-top: -60px;
+    }
+
+    .submit_checkout {
+        display: none;
+    }
+
+    .submit_discount {
+        width: 85%;
+        margin-left: 50px;
+    }
+
+    .submit_checkout_btn {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        box-shadow: 0px 5px 15px #ccc;
+        z-index: 1000;
+    }
+
+    .submit_checkout_btn button {
+        width: 91.5%;
+        margin: 0 50px;
+        margin-top: 10px;
+        height: 50px;
+        background-color: #25D366;
+        border: none;
+        border-radius: 7px;
+        font-size: 17px;
+        color: #fff;
+        font-family: 'peyda-Bold';
+        cursor: pointer;
+        transition: 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .item_name_content {
+        flex-basis: 100%;
+    }
+
+    .content_cart {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gift_btn button {
+        margin-top: 0;
+    }
+
+    .gift_input {
+        top: 5px;
+    }
+
+    .item_price_content {
+        width: 30%;
+    }
+
+    .cart_product_header {
+        display: none;
+    }
+
+    .item_quantity_content {
+        width: 30%;
+    }
+
+    .flex_responsive {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .level span {
+        font-size: 10px;
+    }
+
+    .level img {
+        width: 25px;
+    }
+
+    .level p {
+        font-size: 13px;
+    }
+
+    .img_item_name img {
+        width: 130px;
+    }
+
+    .Checkout {
+        height: 550px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Checkout1 {
+        width: 100%;
+    }
+
+    .Checkout2 {
+        width: 100%;
+    }
+
+    .submit_checkout {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .gift_btn button {
+        margin-top: 10px;
+    }
+
+    .gift_input {
+        top: 14px;
+    }
+
+    .price_off_item_price {
+        font-size: 14px;
+    }
+
+    .item_price_content {
+        width: 60%;
+    }
+
+    .item_quantity_content button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .item_final_price_content {
+        padding-right: 74px;
+    }
+
+    .submit_checkout_btn button {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .item_quantity_content button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .submit_discount {
+        width: 78%;
     }
 }
