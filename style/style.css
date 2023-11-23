@@ -866,7 +866,7 @@ header input::placeholder {
 
 .product {
     width: 23%;
-    height: 560px;
+    height: auto;
     box-shadow: 3px 5px 20px #ccc;
     border-radius: 10px;
     cursor: pointer;
@@ -1508,6 +1508,159 @@ footer {
 
 .home_header p, .categorie_header p, .cart_header p, .profile_header p {
     font-family: 'peyda-Bold';
+}
+
+@media screen and (min-width: 2500px) {
+    .product {
+        height: auto;
+    }
+
+    p {
+        font-size: 30px !important;
+    }
+    
+    a {
+        font-size: 25px !important;
+    }
+
+    .size p {
+        width: 70px;
+        height: 70px;
+        margin-right: 40px;
+    }
+
+    .remaining {
+        width: 325px;
+        height: 85px;
+        left: 285px;
+    }
+
+    .navbar_border {
+        height: 30px;
+    }
+
+    .flex_button button {
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .header input {
+        width: 48%;
+        height: 90px;
+    }
+
+    .icon_rtl {
+        background-size: 45px;
+    }
+    
+    .logo {
+        width: 450px;
+    }
+
+    .img_slide {
+        margin-top: 105px;
+    }
+
+    .banner1 {
+        margin-top: 200px;
+    }
+
+    .Categories_img {
+        justify-content: space-between;
+    }
+
+    .Categories_img img {
+        width: 310px;
+        height: 310px;
+    }
+
+    .off {
+        width: 100px;
+        height: 100px;    
+    }
+
+    #seconds {
+        width: 100px;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    #minutes {
+        width: 100px;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    #hours {
+        width: 100px;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    .count_timer h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+
+    .timer_img img {
+        width: 600px;
+    }
+
+    .item {
+        width: 420px;
+        height: 420px;    
+    }
+
+    .item p {
+        font-size: 25px !important;
+    }
+
+    .brand img {
+        width: 8%;
+    }
+
+    .more button {
+        width: 400px;
+        height: 100px;
+        font-size: 26px;
+    }
+
+    .newsletter_form {
+        top: 0px;
+        left: 41%;
+    }
+
+    .logo_namad img {
+        width: 150px;
+    }
+
+    .bani_mag_logo {
+        width: 345px;
+    }
+
+    .logo_footer {
+        width: 380px;
+    }
+
+    .footer_part2 button {
+        width: 300px;
+        height: 70px;
+        margin-left: 80px;
+    }
+
+    .two_dot {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .product {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1495px) {
@@ -2386,7 +2539,7 @@ footer {
 
 .related h1 {
     text-align: center;
-    padding-top: 210px;
+    padding-top: 360px;
     padding-bottom: 50px;
     font-family: 'peyda-Bold';
 }
@@ -2424,6 +2577,145 @@ footer {
     font-family: 'peyda';
     text-decoration: line-through;
     font-size: 18px;
+}
+
+@media screen and (min-width: 4000px) {
+    .wrapper {
+        top: 210px;
+    }
+
+    .image_title {
+        left: 57%;
+    }
+
+    .final_price {
+        left: 10%;
+        top: 75px;
+    }
+
+    .banicoin {
+        width: 835px;
+        height: 90px;
+    }
+
+    .price_number {
+        width: 215px;
+        height: 54px;
+    }
+
+    .complite_buy select {
+        left: 5%;
+    }
+
+    .product_color {
+        top: 81px;
+        left: 0%;
+    }
+
+    .add_to_cart {
+        width: 48%;
+    }
+
+    .how_size {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 3743px) {
+    .wrapper {
+        top: 210px;
+    }
+
+    .image_title {
+        left: 47%;
+    }
+
+    .final_price {
+        left: 10%;
+        top: 75px;
+    }
+
+    .banicoin {
+        width: 835px;
+        height: 90px;
+    }
+
+    .price_number {
+        width: 215px;
+        height: 54px;
+    }
+
+    .complite_buy select {
+        left: 14%;
+    }
+
+    .product_color {
+        top: 82px;
+        left: 10%;
+    }
+
+    .all_imgs img {
+        height: 15vh;
+    }
+
+    .current_place {
+        height: 79vh;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .add_comment {
+        width: 130%;
+        margin-top: 365px;
+    }
+
+    .comment {
+        width: 53%;
+    }
+}
+
+@media screen and (min-width: 2312px) {
+    .Information_product {
+        height: 290px;
+    }
+
+    .final_price {
+        left: 13%;
+        top: 58px;
+    }
+
+    .complite_buy select {
+        left: 16%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .complite_buy select {
+        left: 18%;
+    }
+
+    .comment {
+        width: 53%;
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .complite_buy select {
+        left: 5%;
+    }
+
+    .banicoin {
+        width: 730px;
+        height: 80px;
+    }
+
+    .all_imgs img {
+        height: 13vh;
+    }
+
+    .current_place {
+        height: 72vh;
+    }
 }
 
 @media screen and (max-width: 1339px) {
@@ -2926,16 +3218,12 @@ div.panel{
 .Categories_fashion {
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.Categorie {
-    width: 13%;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .Categorie img {
-    width: 100%;
+    width: 75%;
 }
 
 .h1_col {
@@ -2988,6 +3276,28 @@ div.panel{
     border-radius: 10px;
 }
 
+@media screen and (max-width: 1090px) {
+    .Categories_more {
+        flex-wrap: wrap;
+    }
+
+    .Categorie_more {
+        width: 50%;
+    }
+
+    .Categorie_more img {
+        width: 80%;
+    }
+
+    .Categories2 {
+        flex-wrap: wrap;
+    }
+
+    .Categorie2{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 643px) {
     .slide3 img {
         height: 200px;
@@ -3004,6 +3314,10 @@ div.panel{
 
     .remaining {
         top: 210px;
+    }
+
+    .Categorie_more {
+        width: 100%;
     }
 }
 
